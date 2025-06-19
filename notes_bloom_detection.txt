@@ -1,0 +1,14 @@
+Tips Bloom detection: 
+
+- Diatoms: Background is 0.2-1.0 mg/m3, bloom tends to be above 2 to 5 and can go up to 10 mg.m3. Size is 100-10 000km2, Duration is 3-days to 3 weeks.
+- Dinoflagellates: Background is 0.05-0.5, bloom is above 1-2 mg.m3. Size is 10-1000 km2. Duration is 1 to 4 weeks, even longer if water stay stratified.
+- Green algae: Background is 0.05-0.3 and bloom is 0.8-1.5 mg.m3. Size is 10-500 km2. Duration is 2-4 days.
+- Haptophytes (Coccolithophores): Background is 0.1-0.5, bloom is 1-2.5 mg.m3. Size is 50-5000 km2. Duration is 1 to 3 weeks.
+- Microphytoplankton: Background is 0.3-1.0, bloom is above 2.0 mg.m3. Size is 50-3000 km2. Duration is 3 days to 2 weeks.
+- Nanophytoplankton: Background is 0.1-0.4, bloom is 0.8-1.5 mg.m3. Size is 50-5000 km2. Duration is 1 to 2 weeks.
+- Picophytoplankton: Background is 0.05-0.2, bloom is 0.5-1.0 mg.m3. 100-1000 km2. Blooms are rare.
+- Prochlorophytes: Background is 0.01-0.1, bloom is 0.3-0.5 mg.m3. Size is 100-10000km2. 1 week to a month.
+- Procaryotes: Background is 0.05-0.2, bloom is 0.5-1.0 mg.m3 100-5000 km2. From 1 week to a month.
+
+
+The datasets used here (" SeaWiFS, MODIS, MERIS, VIIRS-SNPP & JPSS1, OLCI-S3A & S3B") combined have 4 km resolution except if I use OLCI. That means that I need 2x2 pixels to see a bloom, that would cover 64 km2 for the smallest. That would leave out my smallest blooms for Nanophytoplankton and haptophytes.
