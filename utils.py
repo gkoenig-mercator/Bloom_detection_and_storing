@@ -1,4 +1,6 @@
 from datetime import datetime, timedelta
+import xarray as xr
+
 
 def generate_timestamps(start_date_str, end_date_str):
     """
@@ -22,3 +24,10 @@ def generate_timestamps(start_date_str, end_date_str):
         current += timedelta(days=1)
 
     return timestamps
+
+
+def getting_plankton_dataset_specific_date(date_timestamp_beginning, date_timestamp_end):
+    algae_dataset = copernicusmarine.subset(dataset_id="cmems_obs-oc_atl_bgc-plankton_nrt_l3-multi-1km_P1D",
+                                            start_datetime=date_timestamp_beginning,
+                                            end_datetime=date_timestamp_end)
+    return algae_dataset.file_path, xr.open_dataset(algae_dataset.file_path)
